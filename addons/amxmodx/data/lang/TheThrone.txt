@@ -1,0 +1,74 @@
+[en] -- RedSMURF
+THRONE_CHAT_TAG                                = ^4[THE THRONE]^1
+THRONE_CHAT_LIMIT                              = You've reached the maximum number of The Thrones ^4%d
+THRONE_CHAT_NO_THRONE                          = There are no The Thrones available
+THRONE_CHAT_NOT_ALIVE                          = The target player is not alive
+THRONE_CHAT_CREATE_NEW                         = ^3%s ^1created
+THRONE_CHAT_REMOVE_CURRENT                     = ^3%s ^1removed
+THRONE_CHAT_REMOVE_ALL                         = All The Thrones removed
+THRONE_CHAT_SAVE                               = The Throne data saved in ^4%s
+THRONE_CHAT_SHOW_CURRENT                       = ^3%s ^1is %L
+THRONE_CHAT_SHOW_ALL_SHOWN                     = All The Thrones are now Shown
+THRONE_CHAT_SHOW_ALL_HIDDEN                    = All The Thrones are now Hidden
+THRONE_CHAT_STATUS_CURRENT                     = ^3%s ^1is %L
+THRONE_CHAT_STATUS_ALL_ENABLED                 = All The Thrones are now Enabled
+THRONE_CHAT_STATUS_ALL_DISABLED                = All The Thrones are now Disabled
+THRONE_CHAT_VOTE_DISABLED                      = Voting is disabled
+THRONE_CHAT_VOTE_COOLDOWN                      = Wait a little longer before starting another vote
+THRONE_CHAT_VOTE_FAILED                        = The vote to throne ^3%s ^1has failed
+THRONE_CHAT_VOTE_PASSED                        = The vote to throne ^3%s ^1has passed
+THRONE_CHAT_VOTE_NO_TARGETS                    = There are no alive players to vote for
+
+THRONE_CHAT_SHOWN                              = Shown
+THRONE_CHAT_HIDDEN                             = Hidden
+THRONE_CHAT_ENABLED                            = Enabled
+THRONE_CHAT_DISABLED                           = Disabled
+
+THRONE_NAV_NEXT                                = Next
+THRONE_NAV_BACK                                = Back
+THRONE_ON                                      = \y[ON]
+THRONE_OFF                                     = \r[OFF]
+THRONE_SHOWN                                   = \y[SHOWN]
+THRONE_HIDDEN                                  = \r[HIDDEN]
+THRONE_ENABLED                                 = \y[ENABLED]
+THRONE_DISABLED                                = \r[DISABLED]
+THRONE_ROTATE_SKIN_1                           = \d[SKIN 1]
+THRONE_ROTATE_SKIN_2                           = \d[SKIN 2]
+THRONE_ROTATE_SKIN_3                           = \d[SKIN 3]
+
+THRONE_MENU_TITLE                              = \dThe Throne - Version \y%s
+THRONE_MENU_TITLE_PAGE                         = \yPage:\r
+THRONE_ROOT_CREATE                             = Create The Throne
+THRONE_ROOT_EDIT                               = Edit The Throne
+THRONE_ROOT_REMOVE                             = Remove The Throne
+THRONE_ROOT_SAVE                               = Save Data
+THRONE_ROOT_SHOW                               = Visibility Settings
+THRONE_ROOT_STATUS                             = Status Settings
+THRONE_ROOT_NOCLIP                             = Status Noclip %L
+THRONE_ROOT_GODMODE                            = Status Godmode %L
+THRONE_ROOT_ROTATE                             = Adjust Rotation
+THRONE_ROOT_VOTE                               = Select a player to throne
+THRONE_ROOT_VOTE_CONFIRM                       = Throne \y%s\d?
+
+THRONE_EDIT_SHOW                               = Edit Visibility
+THRONE_EDIT_STATUS                             = Edit Status
+
+THRONE_REMOVE_CURRENT                          = Remove The Throne >> \y%s
+THRONE_REMOVE_ALL                              = Remove all The Thrones
+
+THRONE_SHOW_CURRENT                            = Show The Throne >> %s%s %L
+THRONE_SHOW_ALL_SHOW                           = Show all The Thrones
+THRONE_SHOW_ALL_HIDE                           = Hide all The Thrones
+
+THRONE_STATUS_CURRENT                          = Enable The Throne >> %s%s %L
+THRONE_STATUS_ALL_ENABLE                       = Enable all The Thrones
+THRONE_STATUS_ALL_DISABLE                      = Disable all The Thrones
+
+THRONE_ROTATE_UP                               = Turn Up
+THRONE_ROTATE_DOWN                             = Turn Down
+THRONE_ROTATE_GROUND                           = Set on ground >> %L
+THRONE_ROTATE_SKIN                             = Rotate Skin >> %L
+THRONE_ROTATE_PLACE                            = Place The Throne
+
+THRONE_VOTE_YES                                = \wYes
+THRONE_VOTE_NO                                 = \wNo
