@@ -6,6 +6,23 @@
 
 ## 📝 Description
 This plugin adds placeable toilets to Counter-Strike 1.6, allowing players to sit down or force other players to take a dump complete with explosive surprises.
+- Place and configure multiple Throne models around the map
+- Send yourself or force other players onto a Throne via menu or chat commands
+- Customize dump durations, intervals, and hold durations
+- Configure explosion chances during each dump
+- Customize voluntary and forced dump messages and toggle chat announcements
+- Configure affected teams and team-based usage restrictions
+- Play configurable flush and randomized dump sound effects
+- Customize screen shake distance, amplitude, frequency, and duration
+- Display customizable HUD messages and effects
+- Allow players to vote to send others to the Throne
+- Configure vote cooldown, duration, and required vote percentage
+- Save, load, and dynamically reload Throne placements and configurations per map
+- Create custom Throne presets (e.g., Team-specific, Explosive, Fast Long Dump)
+
+## 📋 Requirements
+- ReGameDLL
+- AMX Mod X 1.10+
 
 ## ⚙️ Configuration
 ```ini
