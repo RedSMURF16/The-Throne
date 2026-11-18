@@ -5,7 +5,7 @@
 </p>
 
 ## 📝 Description
-This plugin adds placeable toilets ("The Throne") to Counter-Strike 1.6, allowing players to sit down or force other players to take a dump complete with explosive surprises.
+This plugin adds placeable toilets to Counter-Strike 1.6, allowing players to sit down or force other players to take a dump complete with explosive surprises.
 
 ## ⚙️ Configuration
 ```ini
