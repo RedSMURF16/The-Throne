@@ -1623,8 +1623,9 @@ public throneTask()
                             g_ePlayerData[id][PDATA_THRONE_HELD] = false
                             eThrone[THRONE_FLAGS] &= ~FLAG_USED
                             throneSound(eThrone[THRONE_ID], SOUND_FLUSH, false)
-                            engfunc(EngFunc_EmitSound, id, CHAN_VOICE, g_ePlayerData[id][PDATA_CURRENT_DUMP], VOL_NORM, ATTN_NORM, SND_STOP, PITCH_NORM)
                         }
+
+                        engfunc(EngFunc_EmitSound, id, CHAN_VOICE, g_ePlayerData[id][PDATA_CURRENT_DUMP], VOL_NORM, ATTN_NORM, SND_STOP, PITCH_NORM)
                     }
                     else
                     {
