@@ -11,9 +11,9 @@
 *   Commands:
 *       say /throne [name | all]          "Opens the Throne menu or executes the specified player(s)."
 *       say_team /throne [name | all]     "Opens the Throne menu or executes the specified player(s)."
-*       say /THRONE_vote                  "Opens the player voting menu."
-*       say_team /THRONE_vote             "Opens the player voting menu."
-*       theTHRONE_reload                  "Reloads the configuration file."
+*       say /throne_vote                  "Opens the player voting menu."
+*       say_team /throne_vote             "Opens the player voting menu."
+*       throne_reload                     "Reloads the configuration file."
 *
 *	Changelog:
 *       v1.0: Initial release.
@@ -60,7 +60,7 @@
 #define XO_CBASEPLAYER              5
 #define XO_CBASEPLAYERWEAPON        4
 #define THRONE_KEY                  777270
-#define THRONE_VOTE_KEY             777271
+#define throne_vote_KEY             777271
 #define THRONE_ARRAY_ITEM           pev_iuser1
 #define THRONE_DEATH_PENALTY        250.0
 #define SEQ                         60
@@ -351,9 +351,9 @@ public plugin_init()
 
     register_clcmd("say /throne",       "cmdMenu", ADMIN_ACCESS, "-- Opens the Throne menu.")
     register_clcmd("say_team /throne",  "cmdMenu", ADMIN_ACCESS, "-- Opens the Throne menu.")
-    register_clcmd("say /THRONE_vote",        "cmdVote", ADMIN_ACCESS_VOTE, "-- Opens the player voting menu.")
-    register_clcmd("say_team /THRONE_vote",   "cmdVote", ADMIN_ACCESS_VOTE, "-- Opens the player voting menu.")
-    register_concmd("theTHRONE_reload",  "cmdReload", ADMIN_ACCESS, "-- Reloads the configuration file")
+    register_clcmd("say /throne_vote",        "cmdVote", ADMIN_ACCESS_VOTE, "-- Opens the player voting menu.")
+    register_clcmd("say_team /throne_vote",   "cmdVote", ADMIN_ACCESS_VOTE, "-- Opens the player voting menu.")
+    register_concmd("throne_reload",  "cmdReload", ADMIN_ACCESS, "-- Reloads the configuration file")
     register_dictionary("TheThrone.txt")
 
     g_iFwdEmitSound = register_forward(FM_EmitSound, "fwdEmitSound")
@@ -502,7 +502,7 @@ public cmdVote(id, iLevel, iCmd)
         return PLUGIN_HANDLED
     }
 
-    if ( task_exists(THRONE_VOTE_KEY)
+    if ( task_exists(throne_vote_KEY)
     || get_gametime() < g_fVoteNext )
     {
         client_print_color(id, id, "%L %L", id, "THRONE_CHAT_TAG", id, "THRONE_CHAT_VOTE_COOLDOWN")
@@ -1477,7 +1477,7 @@ public menuHandlerVote(id, menu, item)
     g_iVoteYes = 0
     g_iVoteTargetUserid = iUserid
     get_user_name(iPlayer, g_szVoteTarget, charsmax(g_szVoteTarget))
-    set_task(g_eSettings[SETTING_VOTE_DURATION], "taskVoteEnd", THRONE_VOTE_KEY)
+    set_task(g_eSettings[SETTING_VOTE_DURATION], "taskVoteEnd", throne_vote_KEY)
     for ( new iPlayer = 1; iPlayer <= g_iMaxPlayers; iPlayer ++ )
     {
         if ( !is_user_connected(iPlayer) )
@@ -1494,10 +1494,10 @@ public menuHandlerVote(id, menu, item)
 public menuVoteConfirm(id, menu)
 {
     new szItem[128]
-    formatex(szItem, charsmax(szItem), "%L", id, "THRONE_VOTE_YES")
+    formatex(szItem, charsmax(szItem), "%L", id, "throne_vote_YES")
     menu_additem(menu, szItem)
 
-    formatex(szItem, charsmax(szItem), "%L", id, "THRONE_VOTE_NO")
+    formatex(szItem, charsmax(szItem), "%L", id, "throne_vote_NO")
     menu_additem(menu, szItem)
 }
 
