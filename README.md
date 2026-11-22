@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/2026-11-22%2012-53-13_cut.gif" alt="The Throne">
+</p>
+
 <h1 align="center">The Throne</h1>
 
 <p align="center">
