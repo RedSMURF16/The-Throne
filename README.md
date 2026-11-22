@@ -1,7 +1,7 @@
 <h1 align="center">The Throne</h1>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=8DYshbO30FY"><img src="https://img.youtube.com/vi/8DYshbO30FY/maxresdefault.jpg" alt="Watch on YouTube" width="600"></a>
+  <img src="images/demo.gif" alt="The Throne">
 </p>
 
 ## 📝 Description
